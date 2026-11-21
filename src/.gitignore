@@ -1,0 +1,238 @@
+
+# ==========================================
+# AI Racing Coach - Git Ignore
+# ==========================================
+
+# ------------------------------------------
+# Environment variables and secrets
+# ------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+secrets.json
+secrets.*.json
+appsettings.Local.json
+
+# ------------------------------------------
+# .NET / ASP.NET Core
+# ------------------------------------------
+**/bin/
+**/obj/
+**/out/
+**/TestResults/
+*.user
+*.suo
+*.cache
+*.coverage
+*.coveragexml
+project.lock.json
+.nuget/
+artifacts/
+
+# Keep standard application configuration files
+# appsettings.json and appsettings.Development.json
+# are NOT ignored by default.
+
+# ------------------------------------------
+# Node.js / npm
+# ------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.pnpm-store/
+
+# ------------------------------------------
+# Svelte / SvelteKit
+# ------------------------------------------
+.svelte-kit/
+build/
+.vercel/
+.netlify/
+.output/
+
+# ------------------------------------------
+# Vite
+# ------------------------------------------
+dist/
+vite.config.*.timestamp-*
+vite.config.ts.timestamp-*
+
+# ------------------------------------------
+# TypeScript
+# ------------------------------------------
+*.tsbuildinfo
+
+# ------------------------------------------
+# Tauri / Rust
+# ------------------------------------------
+**/target/
+src-tauri/gen/schemas/
+src-tauri/.tauri/
+*.rs.bk
+
+# ------------------------------------------
+# Python / Machine Learning
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+.Python
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.coverage
+htmlcov/
+.tox/
+.nox/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+wheels/
+site-packages/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Machine Learning generated files
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+*.h5
+*.hdf5
+*.tflite
+*.pkl
+*.pickle
+*.joblib
+
+# ------------------------------------------
+# Datasets and large generated files
+# ------------------------------------------
+data/raw/
+data/processed/
+datasets/
+*.csv
+*.parquet
+*.feather
+*.npy
+*.npz
+*.bin
+
+# Keep explicitly documented dataset directories
+!data/README.md
+!datasets/README.md
+
+# ------------------------------------------
+# SQLite / databases
+# ------------------------------------------
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# ------------------------------------------
+# Logs and temporary files
+# ------------------------------------------
+logs/
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.old
+*.orig
+*.rej
+
+# ------------------------------------------
+# IDEs and editors
+# ------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+.idea/
+*.sln.docstates
+*.userprefs
+*.suo
+*.sln.iml
+
+# Visual Studio
+.vs/
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ------------------------------------------
+# Windows
+# ------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ------------------------------------------
+# macOS
+# ------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+
+# ------------------------------------------
+# Linux
+# ------------------------------------------
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ------------------------------------------
+# Generated frontend assets
+# ------------------------------------------
+*.map
+
+# ------------------------------------------
+# Deployment and local tooling
+# ------------------------------------------
+.vercel
+.netlify
+.turbo/
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
